@@ -37,6 +37,6 @@ jobs:
       
     - uses: AButler/upload-release-assets@v2.0
       with:
-          files: './x64/Release/libserialports.dll;./x64/Release/libserialports.lib'
+          files: './x64/Release/libserialport.dll;./x64/Release/libserialport.lib;./libserialport.h'
           release-tag: v${{ steps.tagName.outputs.tag }}    
           repo-token: ${{ secrets.GITHUB_TOKEN }}   
